@@ -17,7 +17,7 @@ include(JUCEDefaults)
 # This is the internal name of the project and the name of JUCE's shared code target
 # Note: This cannot have spaces (it may be 2024, but you can't have it all!)
 # Worry not, JUCE's PRODUCT_NAME can have spaces (and is what DAWs display)
-set(PROJECT_NAME "Pamplejuce")
+set(PROJECT_NAME "Test Plugin")
 
 # Worry not, JUCE's PRODUCT_NAME can have spaces (and is what DAWs will display)
 # You can also just have it be the same thing as PROJECT_NAME
@@ -28,10 +28,10 @@ set(PROJECT_NAME "Pamplejuce")
 set(PRODUCT_NAME "Pamplejuce Demo")
 
 # Change me! Used for the MacOS bundle name and Installers
-set(COMPANY_NAME "Pamplejuce Company")
+set(COMPANY_NAME "Test Company")
 
 # Change me! Used for the MacOS bundle identifier (and signing)
-set(BUNDLE_ID "com.pamplejuce.pamplejuce")
+set(BUNDLE_ID "com.test.testplugin")
 
 # Change me! Set the plugin formats you want built
 # Valid choices: AAX Unity VST VST3 AU AUv3 Standalone
@@ -75,12 +75,12 @@ juce_add_plugin("${PROJECT_NAME}"
     # Change me!
     # A four-character plugin id
     # First character MUST be uppercase for AU formats
-    PLUGIN_MANUFACTURER_CODE Pamp
+    PLUGIN_MANUFACTURER_CODE Test
 
     # Change me!
     # A unique four-character plugin id
     # Note: this must have at least one upper-case character
-    PLUGIN_CODE P001
+    PLUGIN_CODE T008
     FORMATS "${FORMATS}"
 
     # The name of your final executable
